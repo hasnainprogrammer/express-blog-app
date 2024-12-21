@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <%- include('header.ejs') %>
+
+        <div class="container">
+            <p class="login-msg">
+                Login is required in order to compose a post!
+            </p>
+            <h1>Login</h1>
+            <form action="login" method="post">
+                <input type="text" name="uname" class="input" placeholder="username">
+                <input type="text" name="pass" class="input" placeholder="password">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+</body>
+
+</html>

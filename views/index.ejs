@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <%- include('header.ejs') %>
+
+        <div class="posts">
+            <% if(postsData){ %>
+                <% postsData.forEach(post=> { %>
+                    <div class="post">
+                        <h2>
+                            <%= post.title[0].toUpperCase() + post.title.slice(1,) %>
+                        </h2>
+                        <p>
+                            <%= post.body.slice(0, 100) %>...<a href="/post/<%= post.pid %>">Read More</a>
+                        </p>
+                        <p><strong>Posted by:</strong>
+                            <%= post.uname %>
+                        </p>
+                    </div>
+                    <% }) %>
+                        <% } %>
+        </div>
+
+</body>
+
+</html>

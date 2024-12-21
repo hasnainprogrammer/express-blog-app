@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <%- include('header.ejs') %>
+
+        <div class="container">
+            <h1>Signup</h1>
+            <form action="signup" method="post">
+                <input type="text" name="username" class="input" placeholder="username">
+                <input type="text" name="password" class="input" placeholder="password">
+                <input type="text" name="cpassword" class="input" placeholder="confirm password">
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+</body>
+
+</html>

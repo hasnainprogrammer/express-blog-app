@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compose</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <%- include('header.ejs') %>
+
+        <div class="container">
+            <h1>Compose Post</h1>
+            <form action="compose" method="post">
+                <input type="text" name="title" class="input" placeholder="Title of the post">
+                <textarea name="body" class="textarea" cols="30" rows="8" placeholder="Body of the post"></textarea>
+                <button type="submit">Post</button>
+            </form>
+        </div>
+</body>
+
+</html>
